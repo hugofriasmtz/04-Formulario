@@ -81,13 +81,13 @@
                return this.proyects.length; 
             },
             porcentage (){
-                let completeds = 0;
+                let completed = 0;
                 this.proyects.map(proyect => {
-                   if(proyect.completed) 
-                    completeds++;
+                   if(proyect.filled) 
+                    completed++;
                 });
 
-                return (completeds * 100) / this.NumProyects  || 0;
+                return (completed * 100) / this.NumProyects  || 0;
             }
         },
         components: { ProgressBar, TotalProyects },

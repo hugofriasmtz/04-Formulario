@@ -20,7 +20,7 @@
                     <td> {{proyect.proyect}} </td>
                     <td> {{proyect.type}} </td>
                     <td @click="status(proyect, 'urgent')" :class="proyect.urgent ? 'bg-success': 'bg-danger'"> {{ proyect.urgent ? "Si" : "No" }} </td>
-                    <td @click="status(proyect, 'completed')" :class="proyect.completed ? 'bg-success': 'bg-danger'"> {{ proyect.complete ? "Completado" : "Incompleto" }} </td>
+                    <td @click="status(proyect, 'filled')" :class="proyect.filled ? 'bg-success': 'bg-danger'"> {{ proyect.filled ? "Completado" : "Incompleto" }} </td>
                     
                 </tr>
             </tbody>
