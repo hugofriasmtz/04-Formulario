@@ -29,7 +29,7 @@
             </form>           
         </div>
         <div class="col-12 col-md-8">
-            <total-proyects :NumProyects="NumProyects" :proyects="proyects" :status="status"/>
+            <total-proyects :NumProyects="NumProyects" :proyects="proyects" :status="status" :cleanData="cleanData" />
         </div> 
    </div>
 
@@ -71,7 +71,7 @@
             saveData () {
                 localStorage,setItem("proyects", JSON.stringify(this.proyects));
             },
-            clearData () {
+            cleanData () {
                 this.proyects = [];
                 localStorage.clear();
             },

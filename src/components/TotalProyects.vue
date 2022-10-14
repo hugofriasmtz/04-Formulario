@@ -1,7 +1,15 @@
 <template>
-    <h3>
-        Total de Proyectos: {{ NumProyects }}
-    </h3>
+ 
+    <div class="row">
+        <div class="col-6 my-3">
+            <h3>
+                Total de Proyectos: {{ NumProyects }}</h3>
+        
+        </div>
+        <div class="col-6 text-end">
+            <button @click="cleanData" class="btn btn-warning">Limpiar Proyecto</button>
+        </div>
+    </div>
 
     <div class="table-responsive">
         <table class="table table-dark table-hover">
@@ -30,7 +38,7 @@
 
 <script>
     export default {
-        props: ['NumProyects', 'proyects', 'status'],
-
+        props: ['NumProyects', 'proyects', 'status', 'cleanData'],
+       
     };
 </script>
